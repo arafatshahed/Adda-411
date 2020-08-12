@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'users.apps.UsersConfig',
+    'user.apps.UserConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -53,7 +53,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'adda.urls'
 
 STATICFILES_DIRS = [
-    "/adda/users/static",
+    "/adda/user/static",
 ]
 
 

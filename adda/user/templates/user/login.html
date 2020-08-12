@@ -1,0 +1,26 @@
+{% extends "user/base.html" %}
+
+{% block content %}
+  
+  <div class="sign">
+    <form class="" action="auth.py" method="post">
+      <h1>Sign In</h1>
+      <input
+        type="text"
+        placeholder="username"
+        name="username"
+        class="txtb"
+      />
+      <input
+        type="password"
+        placeholder="password"
+        name="password"
+        class="txtb"
+      />
+      <input type="submit" value="Sign In" class="sign-btn" />
+      <a href="{% url 'user-register' %}">Don't have an account?</a>
+    </form>
+  </div>
+
+{% endblock content %}
+
